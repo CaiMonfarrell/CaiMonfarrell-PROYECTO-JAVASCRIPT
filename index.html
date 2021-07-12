@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<title>Javascript</title>ll
+	</head>
+	<body>
+		<header>
+			<div id="header" class="header">
+				<nav class="navbar navbar navbar-dark navbar-expand-sm fixed-top">
+					<a class="navbar-brand" href="index.html">
+				   		 <img src="img/cai1.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+				  	</a>
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  				</button>
+				  	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<div class="navbar-nav mr-auto ml-auto text-center">
+				      <a class="nav-link" href="#">BODEGAS</a>
+				      <a class="nav-link" href="#">MAPA</a>
+				      <a class="nav-link" href="#">RESTAURANTES</a>
+				      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACTO</a>
+				    </div>	
+				    </div>
+				    <div id="carrito">
+						<ul>
+							<li class="submenu">
+								<img src="img/cart.svg" id="img-carrito">
+								<div id="carrito">
+									<table id="lista-carrito" class="u-full-width">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Nombre</th>
+												<th>Precio</th>
+												<th>Cantidad</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+
+									<a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="contenedor-titulo">
+			<div class="contenedor-padding">
+				<div class="contenedor-pagina">
+					<h1 class="nombre-empresa">Un Vinito</h1>
+					<br>
+					<h2 class="nombre-empresa">Tu vinoteca Online</h2>
+				</div>				
+			</div>
+		</div>		
+		<section class="contenedor-productos" id="lista-productos">
+			<div class="card-deck">
+			  <div class="card">
+			    <img class="card-imagen" src="https://matiasriccitelli.com/wp-content/uploads/2018/07/applemalbec.jpg" class="img-nicasia card-img-top" alt="#">
+			    <div class="card-body">
+			      <h5 class="card-title">NICASIA MALBEC-2015</h5>
+			      <p class="card-text">CATENA ZAPATA</p>
+			      <p class="precio">$12000</p>
+			    </div>
+			    <div class="card-footer">
+			    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <img class="card-imagen" src="https://matiasriccitelli.com/wp-content/uploads/2018/07/applemalbec.jpg" class="card-img-top" alt="#">
+			    <div class="card-body">
+			      <h5 class="card-title">RICCITELLI APPLE </h5>
+			      <p class="card-text">MATIAS RICCITELLI</p>
+			      <p class="precio">$990<p>
+			    </div>
+			    <div class="card-footer">
+			    	<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <img class="card-imagen" src="https://matiasriccitelli.com/wp-content/uploads/2018/07/applemalbec.jpg" class="card-img-top" alt="#">
+			    <div class="card-body">
+			      <h5 class="card-title"> TERO RESERVE MALBEC</h5>
+			      <p class="card-text">FELIX LAVAQUE</p>
+			      <p class="precio">$1000</p>
+			    </div>
+			    <div class="card-footer">
+			    	<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+			    </div>
+			  </div>
+			</div>
+			<br>
+
+			<div class="card-deck">
+			  <div class="card">
+			    <img src="https://matiasriccitelli.com/wp-content/uploads/2018/07/applemalbec.jpg" class="card-img-top" alt="#">
+			    <div class="card-body">
+			      <h5 class="card-title">RUTINI - MALBEC</h5>
+			      <p class="card-text">RUTINI</p>
+			      <p class="precio">$1100</p>
+			    </div>
+			    <div class="card-footer">
+			    	<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="https://matiasriccitelli.com/wp-content/uploads/2018/07/applemalbec.jpg" class="card-img-top" alt="#">
+			    <div class="card-body">
+			      <h5 class="card-title">ALA COLORADA</h5>
+			      <p class="card-text">LAS PERDICES</p>
+			      <p class="precio">$900</p>
+			    </div>
+			    <div class="card-footer">
+			    	<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="https://matiasriccitelli.com/wp-content/uploads/2018/07/applemalbec.jpg" class="card-img-top" alt="#">
+			    <div class="card-body">
+			      <h5 class="card-title">FELIX BLEND</h5>
+			      <p class="card-text">FELIX LAVAQUE</p>
+			      <p class="precio">$1150</p>
+			    </div>
+			    <div class="card-footer">
+			    	<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+			    </div>
+			  </div>
+			</div>
+		</section>
+		<section class="formularioDeContacto">
+			<form id="formularioContacto">
+				<h2>CONSULTANOS!! </h2>
+				<input type="text" id="nombre" name="Nombre" placeholder="Nombre" onkeypress="capturarEnter(event)">
+				<input type="text" name="Apellido" placeholder="Apellido" onkeypress="capturarEnter(event)">
+				<input type="text" name="correo" placeholder="Correo" onkeypress="capturarEnter(event)">
+				<input type="number" name="telefono" placeholder="Telefono" onkeypress="capturarEnter(event)">
+				<textarea name="mensaje" placeholder="Escribe tu mensaje aquí" onkeypress="capturarEnter(event)"></textarea>
+				<button id="miBoton" class="boton">ENVIAR CONSULTA</button>
+			</form>
+		</section>
+
+		<div class="container-footer">
+			<footer class="footer">
+				<div class="logo-footer">
+					<img src="img/cai1.png" alt="">	
+				</div>
+				<div class="redes-footer">
+					<a href="https://www.facebook.com/caimonfarrell">
+						<img src="img/facebook.png" class="icon-redes-footer facebook" alt="#">
+					</a>
+					<a href="https://www.instagram.com/caimonfarrell/">
+						<img src="img/instagram.png" class="icon-redes-footer instagram" alt="#">
+					</a>
+					<a href="https://web.whatsapp.com/">
+						<img src="img/whatsapp.png" class="icon-redes-footer whatsapp" alt="#">
+					</a>
+				</div>
+				<hr>
+				<h4> 2021 UnVinito - Todos los Derechos Reservados</h4>
+			</footer>	
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
