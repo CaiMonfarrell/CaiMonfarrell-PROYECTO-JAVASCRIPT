@@ -130,7 +130,7 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
@@ -142,14 +142,14 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+/*@media (min-width: 550px) {
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
-}
+}*/*/
 
 p {
   margin-top: 0; }
@@ -205,6 +205,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
+  display: flex;
+  justify-content: center;
   color: #FFF;
   background-color: #52727d;
   border-color: #52727d; }
@@ -222,17 +224,22 @@ input[type="button"].button-primary:focus {
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
 
-
+#miBoton{
+  display: flex;
+  justify-content: center;
+  text-align:  center;
+  background-color: #374a5c;
+}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-input[type="email"],
+/*input[type="email"],
 input[type="number"],
 input[type="search"],
 input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea,
+textarea,*/
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -242,7 +249,7 @@ select {
   box-shadow: none;
   box-sizing: border-box; }
 /* Removes awkward default styles on some inputs for iOS */
-input[type="email"],
+/*input[type="email"],
 input[type="number"],
 input[type="search"],
 input[type="text"],
@@ -283,7 +290,7 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-
+*/
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

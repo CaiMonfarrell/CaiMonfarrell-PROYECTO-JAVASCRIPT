@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url ('https://fonts.googleapis.com/css2? family = Merienda & display = swap');
+
 body{
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .navbar{
   background-color: #343a40de;
@@ -109,31 +111,92 @@ body{
 }
 .contenedor-titulo{
   margin-top:  7%;
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .contenedor-titulo .contenedor-padding{
-	display:  flex;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 12px;
-	padding-left: 12px;
+  display:  flex;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 .nombre-empresa{
-	color:  #52727d;
-	font-family: 'Courgette', cursiva;
-	font-size: 7rem;
+  color:  #52727d;
+  font-family: 'Courgette', cursiva;
+  font-size: 7rem;
 }
 
+//////////////////////////////////////////*CARROUSEL*////////////////////////////////////////////////
 
+.carousel-inner .active .d-md-block{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom:400px; 
+  height: 25vh;
+  margin-bottom: 40px;
+}
+.carousel-inner .active img{
+  filter: brightness(0.6);
+  height: 64vh;
+}
+.carousel-inner .active .d-md-block h5{
+  font-size: 40px;
+  animation: 6s;
+  animation-name: aparecer;
+}
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.carousel-inner .active .d-md-block p{
+  font-size: 25px;
+  animation: 8s;
+  animation-name: aparecer;
+}
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} 
+
+.carousel-caption {
+  font-family: 'Merienda', cursiva;
+    position: absolute;
+    right: 15%;
+    bottom: 120px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+////////////////////////////*CARDS PRODUCTOS*///////////////////////////////
 .contenedor-productos{
   margin-top: 3%;
   margin-right: 15%;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   margin-left: 15%;
 }
-
+.card img{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    max-height: 300px;
+    position:  relative;
+}
 .card-deck{
     width: 100%;
     max-width: 1200px;
@@ -165,6 +228,7 @@ body{
   justify-content: center;
   font-size: 45px;
 }
+/////////////////////////////////*CARRITO*//////////////////////////////
 .submenu {
     position: relative;
 }
@@ -186,6 +250,7 @@ body{
 }
 tbody img {
   width: 100%;
+  max-width: 50px;
 }
 .borrar-producto {
     background-color: red;
@@ -230,11 +295,86 @@ ul {
 }
 
 #vaciar-carrito{
-  background-color: red;
+  background-color: #e53535;
 }
 
-/*FORMULARIO DE CONTACTO*/
 
+
+
+.titulo-frase{
+  margin-top: 35px;
+      font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.offset-md-2 {
+    margin-left: 16.666667%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 35px;
+}
+.offset-md-2 h2{
+  font-size:  3rem;
+  font-weight: bold;
+  color: black;
+  padding: 15px;
+}
+.offset-md-2 p{
+  font-size: 2rem;
+  color: grey;
+}
+.contenedor-info{
+  margin-top: 15px;
+}
+.contenedor-info .swiper-container{
+  margin-top: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.section-informative-banners {
+    background: rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+.section-informative-banners .container{
+    max-width: 1300px;
+    width: 100%;
+    height: 15rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
+}
+
+.service-item-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*margin-top: 20px;*/
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    display: flex;
+} 
+.texto {
+    padding: 0!important;
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.icono-servicio {
+    font-size: 10em;
+    width: 10rem;
+    height: 5rem;
+}
+/*FORMULARIO DE CONTACTO*/
 
 .formularioDeContacto{
   margin: 0;
@@ -242,14 +382,24 @@ ul {
 }
 
 form {
+  border: 1px solid #541313;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
   width: 450px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgb(82 114 125);
   padding: 30px 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   box-sizing: border-box;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 150px;
-  border-radius: 8px;
+  transition: all 0.25s
+}
+form:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -363,7 +513,7 @@ h4{
   display: flex;
   text-align: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 18px;
   font-weight:500px;
 }
 hr{
@@ -372,4 +522,45 @@ hr{
   border:none;
   margin-bottom:1rem;
   margin-top:0;
+}
+
+
+.footer-payments-shipping-logos img {
+    max-height: 25px;
+    margin: 2px;
+    display: flex;
+    fl
+}
+
+
+.element-footer{
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 8%;
+}
+
+.container-MP{
+    max-width: 1300px;
+    width: 100%;
+    height: 15rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
+}
+
+.banner-informativo{
+    margin-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col-md-8-MP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
 }
