@@ -160,15 +160,15 @@ saludar ()
 // });
 
 // Numero 2 //
-// $("#muestraOculta").click(() => {
-//     $("#title").fadeToggle(1000, function() {
-//         if ($("#muestraOculta").html() == "Ocultar Titulo con FadeToggle") {
-//             $("#muestraOculta").html("Mostrar Titulo con FadeToggle");
-//         } else {
-//             $("#muestraOculta").html("Ocultar Titulo con FadeToggle");
-//         }
-//     });
-// });
+$("#muestraOculta").click(() => {
+    $(".contenedor-muestraOculta").fadeToggle(1000, function() {
+        if ($("#muestraOculta").html() == "Mostrar más") {
+            $("#muestraOculta").html("Ocultar");
+        } else {
+            $("#muestraOculta").html("Mostrar ");
+        }
+    });
+});
 
 // ESTO YA SERÍA PARTE DEL DESAFÍO COMPLEMENTARIO // Para este ejemplo hay que actviar el título bloqueado en el html !!!!!!!!!!!!!!!!!!!1
 // $('#lista-productos').animate({
@@ -178,12 +178,12 @@ saludar ()
 //     // color: "orange", (no se por que no me toma el color de las letras....)
 // },  3000)
 
-// Para este ejemplo hay que dejar bloqueado el titulo que se encuentra en el html !!!!!!!!!!!!!!!!1111
-$(".contenedor-padding").prepend('<div id= "title" class="contenedor-pagina display-none"><h1 class="nombre-empresa">Un Vinito</h1><br><h2 class="nombre-empresa">Tu vinoteca Online</h2></div>');
-//Declaración de métodos encadenados
-$("#title").css("color", "red")
-        .slideUp(2000)
-        .delay(2000)
-        .slideDown(2000);
+// // Para este ejemplo hay que dejar bloqueado el titulo que se encuentra en el html !!!!!!!!!!!!!!!!1111
+// $(".contenedor-muestraOculta").prepend('<div id= "title" class="contenedor-pagina display-none"><h1 class="nombre-empresa">Un Vinito</h1><br><h2 class="nombre-empresa">Tu vinoteca Online</h2></div>');
+// //Declaración de métodos encadenados
+// $("#title").css("color", "red")
+//         .slideUp(2000)
+//         .delay(2000)
+//         .slideDown(2000);
 
 

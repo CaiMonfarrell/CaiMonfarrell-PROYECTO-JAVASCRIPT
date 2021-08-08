@@ -230,6 +230,81 @@ input[type="button"].button-primary:focus {
   text-align:  center;
   background-color: #374a5c;
 }
+.botonesSlide{
+  display: flex;
+  flex-direction:  row;
+  justify-content: center;
+  margin-top: 3%;
+}
+.btn-danger{     
+    color: #fff;
+    background-color: #52727d;
+    border-color: #32444a;
+    border-radius: 40px;
+    font-size: 13px;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #52727d;
+    border-color: #32444a;
+}
+.section-informative-banners {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+/*CARRITO*/
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-width: 300px;
+}
+tbody img {
+  width: 100%;
+}
+.borrar-producto {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+#img-carrito {
+    width: 10vw;
+    height: 8vh;
+}
+
+.contenedor-productos{
+  margin-top: 3%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+}
+
+
+.carousel {
+    margin-top: 7%;
+    position: relative;
+}
+
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*input[type="email"],
@@ -249,6 +324,24 @@ select {
   box-shadow: none;
   box-sizing: border-box; }
 /* Removes awkward default styles on some inputs for iOS */
+
+.vinos-tintos{
+  font-size: 40px;
+  animation: 8s;
+  animation-name: aparecer;
+}
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*.contenedor-formulario{
+  background-image: url("https://vivo247.com/wp-content/uploads/2020/11/vinos-19112020.jpg");
+}*/
 /*input[type="email"],
 input[type="number"],
 input[type="search"],
